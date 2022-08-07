@@ -1,1 +1,1 @@
-
+The main output file is the "Cibersortx_Imputed Absolute Cell Fractions.xlsx" file. The "CibersortCEllFractionDistribution.ai" and the "CellFractionDistributions.png" file was generated from this main output file. "Cibersortx_SignatureMatrix_Hewatmap was downloaded directly from CIBERSORTx 
