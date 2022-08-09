@@ -117,7 +117,7 @@ end
 
 save([save_filename,'_Step2.mat'])
 
-% Step 2b: Consensus clustering of Bootstrapped results
+% Step 3: Consensus clustering of Bootstrapped results
 consensus_G = zeros(N,N);
 for b = 1:N_bootstrap
     ranked_tmp = ranked_Gbs{b};
@@ -135,7 +135,7 @@ end
 clustergram(consensus_G,'Standardize',2,'Cluster',2,'Colormap',redbluecmap)
 save([save_filename,'_Step2.mat'])
 
-% Step 4: CNA Features from consensus matrix G
+% Step 4a: CNA Features from consensus matrix G
 % Rows are Genes/Cytobands, Columns are factors
 % consensus_G(i,j) represents number of times gene i, occured as a top-500
 % feature of factor j.
@@ -146,7 +146,7 @@ n_cutoff = 200;
 cutoff_c = linspace(1.15,1.16,n_cutoff);
 for i = 1:n_cutoff
 consensus_G_clust = cluster(Z, 'cutoff',cutoff_c(i));
-c_k = length(unique(consensus_G_clust))
+c_k = length(unique(consensus_G_clust));
     if c_k<k+5&&c_k>k-5
        choose_c = cutoff_c(i);
        
