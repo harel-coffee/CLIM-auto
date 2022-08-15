@@ -10,3 +10,5 @@ k: user-defined number of clusters.
 W matrix: N x k matrix of (molecular) feature scores for each cluster, where N is the total number of molecular features
 
 H matrix: k x P matrix of sample loadings, where P is the number of samples/patients/tumors.
+
+Cluster_AvgCNA_all: Average of CNA of all samples within each cluster (defined by max H) for each cytoband.
