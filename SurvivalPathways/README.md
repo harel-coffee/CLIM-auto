@@ -1,5 +1,5 @@
 # Input
-TCGA data for ovarian tumors downloaded from CbioPortal.
+TCGA data for ovarian tumors downloaded from cBioPortal.
 
 # Kaplan-Meier Survival Plots
 Survival analysis performed using the MatSurv function (https://github.com/aebergl/MatSurv).
