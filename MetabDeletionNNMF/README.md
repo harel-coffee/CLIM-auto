@@ -2,7 +2,7 @@
 Copy-number alterations data for ovarian tumors (TCGA) and ovarian cancer cell-lines (CCLE) obtained from cBioPortal. Mutation data for ovarian tumors for the most frequently mutated genes in ovarian cancer reported in the COSMIC database.
 
 # Libraries
-Uses the nnmf() function built-into MATLAB for consensus feature NNMF. Relevant study cited in the manuscript.
+Uses the nnmf() function built-into MATLAB for consensus feature NNMF.
 
 # Output
 k: user-defined number of clusters.
